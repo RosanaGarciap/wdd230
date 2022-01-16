@@ -7,8 +7,8 @@
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #9B0000;
-  --secondary-color: #FFB5B5;
+  --primary-color: #362222;
+  --secondary-color: #B3541E;
   --accent1-color: #FF7272;
   --accent2-color: #000B49;
 
@@ -70,13 +70,7 @@
 
   #main-content{
       grid-column: 1/2;
-      font-size: 20px;
-  }
-  
-  ul{
-      width:50%;
-      align-items:flex-end  ;
-      line-height: 1.5em;
+      font-size: 15px;
   }
 
   header{
@@ -101,24 +95,31 @@
     display: inline-block;
     background-color: var(--primary-color);
     text-align:center;
-    color:cornsilk;
+    color: var(--secondary-color);
     border-radius: 5px;
     border-color: #efb08c;
     font-size: 25px;
-    height: 4em;
+    height: 3em;
     width: 60%;
   }
-
+  .back h1{
+    font-size: 1.5em;
+  }
   a{
       text-decoration:None;
   }
-
+  ul li{
+    align-items:flex-end  ;
+    line-height: 1.5em;
+    margin: auto;
+    width: auto;
+  }
   .perfil-photo{
     position: relative;
     float:left;
     z-index: 1;
-    width:150px;
-    height: 200px;
+    width:100px;
+    height: 120px;
     box-shadow: 1px 1px 4px 1px #888;
     border-radius: 3px;
     background-color: white;
@@ -133,7 +134,7 @@
     color:cornsilk;
     border-radius: 5px;
     border-color: #efb08c;
-    font-size: 20px;
+    font-size: 15px;
   }
   footer a{
       color: white;

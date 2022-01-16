@@ -1,0 +1,37 @@
+@media (min-width: 32.5em)  {
+
+    :root {
+        --primary-color: #9B0000;
+        --secondary-color: cornsilk;
+        --accent1-color: #FF7272;
+        --accent2-color: #000B49;
+    }
+    header{
+        padding-left:5em;
+    }
+    .back h1{
+        font-size: 2em;
+      }
+      .back{
+        height: 4em;
+        width: 60%;
+      }
+    .perfil-photo{
+        position: relative;
+        float:left;
+        z-index: 1;
+        width:150px;
+        height: 200px;
+        box-shadow: 1px 1px 4px 1px #888;
+        border-radius: 3px;
+        background-color: white;
+        margin-bottom: 10%;   
+      }
+      #main-content{
+        font-size: 20px;
+    }
+
+    footer .back-footer{
+        font-size: 20px;
+    }
+}
