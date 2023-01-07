@@ -1,0 +1,28 @@
+body {
+    font-family: 'Roboto';
+  }
+
+header, main, footer{
+    max-width: 640px;
+    margin: 1rem auto;
+    border-width: 10px;
+    padding: 1rem;
+    background-color: rgba(5, 159, 255, 0.533);
+}
+
+section{
+    background-color: white;
+    padding: 1rem;
+    margin: 5px;
+}
+
+@media only screen and (min-width: 500px){
+    header{
+        background-color: black;
+        color: white;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
