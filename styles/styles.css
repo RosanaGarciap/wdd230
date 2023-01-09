@@ -1,0 +1,21 @@
+
+
+nav{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+#menu-icon{
+    fill: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    
+}
