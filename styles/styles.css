@@ -4,8 +4,8 @@ nav{
     display: flex;
     padding: 1rem;
     align-items: center;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 #menu-icon{
     fill: white;
