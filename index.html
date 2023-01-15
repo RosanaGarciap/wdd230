@@ -13,31 +13,31 @@
     <title>WDD 230 - Portal - Rosana Garcia</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
-    
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
 <body>
     <nav>
-        <div>
-            <a href="https://www.linkedin.com/in/rosana-garcia/">LinkedIn</a>
-        </div>
-        <div>
-            <a href="https://www.byui.edu/">BYU-Idaho</a>
-        </div>
+        <a href="https://www.linkedin.com/in/rosana-garcia/">LinkedIn</a>
+        <a href="https://www.byui.edu/">BYU-Idaho</a>
         <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/></svg>
     </nav>
     <!-- this content was forked from Google Web Developers 10 Modern Layouts https://youtu.be/qm0IfG1GyZU?t=465-->
         <header>
-            <img src="./images/foto.jpg" alt="Perfil picture">
+            <img src="./images/foto.jpg" id="perfil" alt="Perfil picture">
             <h1>Rosana Garcia</h1>
         </header>
 
         <main>
-            <h2>WDD 230: Course Activity Portal</h2>
-            <section class="card">
+            <div id="title">
+                <h2>WDD 230: Course Activity Portal</h2>
+                <hr>
+            </div>
+            
+            <section class="card" id="card1">
                 <h3>Learning Activities</h3>
+                
                 <ul>
                     <li><b>Lesson 01:</b> <a href="">Course Assignments Portal</a></li>
                     <li><b>Lesson 02:</b> <a href="https://rosanagarciap.github.io/wdd230/week02/design.html">Web design Assignment</a> | <a href="https://codepen.io/RosanaGarciap/pen/oNMZNEv">CodePen in Week 2</a></li>
@@ -46,25 +46,22 @@
                     <li><b>Lesson 05:</b> <a></a></li>
                     <li><b>Lesson 06:</b> <a></a></li>
                     <li><b>Lesson 07:</b> <a></a></li>
-                    <li><b>Lesson 08:</b> <a></a></li>
-                    <li><b>Lesson 09:</b> <a></a></li>
-                    <li><b>Lesson 10:</b> <a></a></li>
                 </ul>
             </section>
-            <section class="card">
+            <section class="card" id="card2">
                 <h3>Project</h3>
                 <a href=""></a>
             </section>
-            <section class="card">
-                <h3>Information</h3>
+            <section class="card" id="card3">
+                <h3>Information</h3>                
                 <a href=""></a>
             </section>
         </main>
 
-        <footer contenteditable>
-            <p></p>
-            <p class="highlight" id="lastModified"></p>
+        <footer>
+            <p>&copy;<span id="year"></span> Rosana Garcia | Caracas Venezuela</p>  
+            <p id="updating-time">Last Updated: <span id="date"></span></p>
         </footer>
-        <script src="./scripts/getDates.js"></script>    
+        <script src="./scripts/getDates.js"></script>
     </body>
 </html>

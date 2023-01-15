@@ -7,12 +7,33 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap');
+:root {
+--heading-font: 'Roboto Slab', serif;
+--paragraph-font: 'Inter', sans-serif;
+--primary-color: #83b1cf;
+--secondary-color: #D8bcab;
+--accent1-color: #888;
+--accent2-color: #272932;
+}
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
   }
-  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+  }
+  header, footer{
+    background-color: #272932;
+    color: #D8bcab;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+  }
   /* Sections
      ========================================================================== */
   
@@ -73,10 +94,15 @@
    * Remove the gray background on active links in IE 10.
    */
   
-  a {
+  nav a {
     background-color: transparent;
+    color: white;
+    text-decoration: none;
   }
-  
+  a:hover{
+    background-color: #83b1cf;
+    font-weight: 20px;
+  }
   /**
    * 1. Remove the bottom border in Chrome 57-
    * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.

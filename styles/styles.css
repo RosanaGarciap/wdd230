@@ -1,16 +1,40 @@
 
-
+#perfil{
+    z-index: 1;
+    box-shadow: 1px 1px 4px 1px #888;
+    border-radius: 3px;
+    width: 60%;
+    margin-left: 30%;
+}
+header{
+    max-height: 150px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items:center ;
+    text-align:left ;
+}
+header>h1{
+    color: #D8bcab;
+    font-size: 30px;
+}
 nav{
+    z-index: 1;
     display: flex;
     padding: 1rem;
-    text-align: right;
-    gap: 10px;
+    font-size: 20px;
     align-items: center;
+    justify-items: center;
+    justify-content: right;
     background-color: black;
     color: white;
+    width: 100%;
 }
+nav > a{
+    padding-right: 30px;
+} 
 #menu-icon{
     fill: white;
+    padding-right: 2rem;
 }
 
 main > a{
@@ -19,6 +43,49 @@ main > a{
 }
 
 main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    grid-gap: 1rem;
     margin: auto;
     max-width: 760px;
+    margin-top: 30px;
+}
+#title{
+    grid-column: 1/3;
+}
+.card {
+    width: 100%;
+    min-width: fit-content;
+    box-shadow: 1px 1px 4px 1px #888;
+    border-radius: 3px;
+    background-color: white;       
+    line-height: 1.5em;
+  }
+.card h3{
+    text-align: center;
+    background-color: #83b1cf;
+    padding: 1em;
+    margin-top: 0;
+}
+#card1{
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+#card2{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+#card2 #card3{
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.card-header{
+    width: 100%;
+    background-color: #83b1cf;
+    margin:0;
+    height: fit-content;    
+}
+li{
+    list-style:none;
 }
