@@ -21,7 +21,7 @@
 <body>
     <nav>
         <ul class="menu">
-            <li title="home" style="text-align: right;">
+            <li title="home" id="menu-icon">
                 <svg id="menu-icon" class="menu-button" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/>
                 </svg>
             </li>
@@ -35,14 +35,14 @@
     </nav>
     <!-- this content was forked from Google Web Developers 10 Modern Layouts https://youtu.be/qm0IfG1GyZU?t=465-->
         <header>
-            <img src="./images/foto.jpg" id="perfil" alt="Perfil picture">
+            <img src="./images/perfil.webp" id="perfil" alt="Perfil picture" loading="lazy">
             <h1 class="heading">Rosana Garcia</h1>
         </header>
         <div class="hero">
             <picture>
                 <source media="(min-width: 960px)" srcset="https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/images/caracas_venezuela_temple_med.webp">
                 <source media="(min-width: 400px)" srcset="https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/images/caracas_venezuela_temple._sm.webp">                
-                <img src="./images/caracas_venezuela_temple_med.webp" alt=" Caracas Temple of The Church of Jesus Christ of Latter-Day Saints">
+                <img src="./images/caracas_venezuela_temple_med.webp" alt=" Caracas Temple of The Church of Jesus Christ of Latter-Day Saints" loading="lazy">
             </picture>
             <div class="herolabel">
                 <p>Caracas Temple</p>
@@ -64,7 +64,7 @@
                 <h3>Learning Activities</h3>
                 
                 <ul>
-                    <li><b>Week 01:</b> <a href="https://rosanagarciap.github.io/wdd230/week01/holygrail.html">Holy Grail</a> | <a href="https://rosanagarciap.github.io/wdd230/">Course Assignments Portal</a></li>
+                    <li><b>Week 01:</b> <a href="https://rosanagarciap.github.io/wdd230/week01/holygrail.html">Holy Grail</a> | <a href="https://rosanagarciap.github.io/wdd230/">Course Assignments Portal</a> | <a href="./chamber/site-plan.html">Site Plan</a></li>
                     <li><b>Week 02:</b> <a href="https://rosanagarciap.github.io/wdd230/week02/design.html">Web design Assignment</a> | <a href="https://codepen.io/RosanaGarciap/pen/oNMZNEv">CodePen in Week 2</a></li>
                     <li><b>Week 03:</b> <a href="week03/images/landscape.webp">WebP</a> | <a href="./week03/lazyload.html">Lazy load</a> | <a href="https://codepen.io/RosanaGarciap/pen/ExpbmRB?editors=1100">  CodePen - Winter is comming </a> | <a href="./week03/bom.html">Web Storage API – localStorage</a></li>
                     <li><b>Week 04:</b> <a href="https://codepen.io/RosanaGarciap/pen/RwBMYXB">Pseudo-class Fun</a> | <a href="./week04/images/css-combinators.png">CSS Combinators</a> | <a href="./week04/tablebuild.html">HTML Tables for Data Presentation</a> | <a href="./week04/form-start/index.html">Forms</a> </li>
@@ -79,8 +79,10 @@
             </section>
             <section class="card" id="card3">
                 <h3>Information</h3>                
-                <a href=""></a>
+                <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
             </section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230342.03288956973!2d-62.76380153929089!3d8.330871051654867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dcbf02b84200b49%3A0x6e05317f7c974d14!2sCiudad%20Guayana%2C%20Bol%C3%ADvar!5e0!3m2!1ses!2sve!4v1675117944979!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
         </main>
 
         <footer>
