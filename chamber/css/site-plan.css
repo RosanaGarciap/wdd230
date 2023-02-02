@@ -26,7 +26,6 @@ Fonts are separated by a | */
   --nav-hover-background-color: #FFB400;
 }
 
-
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 html {
   background-color: var(--primary-color);
@@ -135,10 +134,11 @@ nav a:hover {
 
   grid-template-columns: repeat(6, 15%);
   grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
+  grid-template-areas: 
+  ". . home home . ."
+  ". . . top . ."
+  " left left center right right ."
+  "page1 . page2 . . page3";
 }
 .sitemap > div {
 
@@ -147,6 +147,13 @@ nav a:hover {
 }
 .sm-home {
   grid-area: home;
+  background-color: #999;
+  line-height: 3em;
+
+}
+
+.sm-page1 {
+  grid-area: page1;
   background-color: #999;
   line-height: 3em;
 }
@@ -168,6 +175,12 @@ nav a:hover {
 
 .left {
   grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.center {
+  grid-area: center;
   border-top: 1px solid;
   border-left: 1px solid;
 }

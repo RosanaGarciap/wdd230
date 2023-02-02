@@ -84,7 +84,31 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230342.03288956973!2d-62.76380153929089!3d8.330871051654867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dcbf02b84200b49%3A0x6e05317f7c974d14!2sCiudad%20Guayana%2C%20Bol%C3%ADvar!5e0!3m2!1ses!2sve!4v1675117944979!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             
         </main>
-
+        <div>
+            <form action="">
+                <fieldset>
+                    <label class="top">First Name <input type="text" name="fn" required></label>
+                    <label class="top">Email <input type="email" name="email" id="email" required></label>
+                    <div class="rangecontainer">
+                        <label> <input type="range" min="1" max="10" id="r" name="r" list="five" required="required"></label>
+                        <div class="ratinglabels">
+                            <span class="ratevalue">1</span>
+                            <span class="ratevalue">2</span>
+                            <span class="ratevalue">3</span>
+                            <span class="ratevalue">4</span>
+                            <span class="ratevalue">5</span>
+                            <span class="ratevalue">6</span>
+                            <span class="ratevalue">7</span>
+                            <span class="ratevalue">8</span>
+                            <span class="ratevalue">9</span>
+                            <span class="ratevalue">10</span>
+                        </div>
+                    </div>
+                    <label class="top">Username Identifier <input type="password" name="username" required id="username"></label>
+                    <label class="top">Repeat Username Identifier <input type="password" name="rusername" required id="rusername"></label>
+                </fieldset>
+            </form>
+        </div>
         <footer>
             <p>&copy;<span id="year"></span> Rosana Garcia | Caracas Venezuela</p>  
             <p id="updating-time">Last Updated: <span id="date"></span></p>
