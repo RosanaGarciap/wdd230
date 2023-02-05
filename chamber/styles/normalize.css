@@ -17,6 +17,19 @@
 --secondary-color: #00A6ED;
 --accent1-color: #7FB800;
 --accent2-color: #000;
+--nav-background-color:#000;
+
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: black;  /* headlines on a white background */ 
+  --headline-color-on-color: black; /* headlines on a colored background */ 
+  --paragraph-color-on-white: black; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: black; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #7FB800;
+  --nav-link-color: #FFFF;
+  --nav-background-color: black;
+  --nav-hover-link-color: #000;
+  --nav-hover-background-color: #FFB400;
 }
  html {
     line-height: 1.15; /* 1 */
@@ -28,9 +41,14 @@
   }
 
   header{
-    text-align: center;
     width: 100%;
+    padding-top: 4%;
+    height: 300px;
+    background-image: url("../images/hero-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+
 
   /* Sections
      ========================================================================== */
@@ -91,16 +109,7 @@
   /**
    * Remove the gray background on active links in IE 10.
    */
-  
-  nav a {
-    background-color: transparent;
-    color: white;
-    text-decoration: none;
-  }
-  a:hover{
-    background-color: #83b1cf;
-    font-weight: 20px;
-  }
+
   /**
    * 1. Remove the bottom border in Chrome 57-
    * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -110,6 +119,46 @@
     border-bottom: none; /* 1 */
     text-decoration: underline; /* 2 */
     text-decoration: underline dotted; /* 2 */
+  }
+  #header-content{
+    display: flex;
+  }
+  #header-content  div{
+
+  }
+  nav {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: var(--nav-background-color);
+    line-height: 3em;
+    text-align: center;  
+    font-size: 1.2em;
+    font-size: 20px;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: fit-content;
+  }
+
+  nav > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+  }
+  nav a {
+    padding:1em;
+    min-width: 70px;
+    text-decoration: none;
+  }
+  nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+  }
+  nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+    border-radius: 10px;
+    max-width: fit-content;
   }
   
   /**
