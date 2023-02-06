@@ -122,12 +122,14 @@
   }
   #header-content{
     display: flex;
-  }
-  #header-content  div{
-
-  }
-  nav {
     padding: 10px;
+  }
+
+  #header-content p{
+    padding-left:20px;
+  }
+
+  nav {
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: var(--nav-background-color);

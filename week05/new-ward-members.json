@@ -1,41 +1,23 @@
 {
-    "familyName" : "Super Hero Squad",
+    "familyName" : "Garcia Perez",
     "assignationDate" : "23-01-2010",
     "number-members" : 3,
-    "secretBase" : "Super tower",
     "BishopicVisit" : true,
     "familyMembers" : [
       {
         "name" : "Romar Garcia",
-        "age" : 58,
-        "secretIdentity" : "Dan Jukes",
-        "powers" : [
-          "Radiation resistance",
-          "Turning tiny",
-          "Radiation blast"
-        ]
+        "gender" : "F",
+        "birthdate" : "12-04-1964"
       },
       {
         "name" : "Gricelda Perez",
-        "age" : 39,
-        "secretIdentity" : "Jane Wilson",
-        "powers" : [
-          "Million tonne punch",
-          "Damage resistance",
-          "Superhuman reflexes"
-        ]
+        "gender" : "F",
+        "birthdate" : "23-03-1966"
       },
       {
-        "name" : "Rosana Garcia",
-        "age" : 1000000,
-        "secretIdentity" : "Unknown",
-        "powers" : [
-          "Immortality",
-          "Heat Immunity",
-          "Inferno",
-          "Teleportation",
-          "Interdimensional travel"
-        ]
+        "name" : "Rosana Garcia Perez",
+        "gender" : "F",
+        "birthdate" : "23-05-1996"
       }
     ]
   }

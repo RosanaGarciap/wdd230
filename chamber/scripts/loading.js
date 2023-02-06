@@ -1,4 +1,4 @@
-const url = "./images.json";
+const url = "./scripts/images.json";
 const list = document.querySelector('#list-members');
 
 let i = 1;

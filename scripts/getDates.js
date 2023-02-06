@@ -62,3 +62,15 @@ if (numVisits !== 0) {
 numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
+
+
+/**Event Listener generate Table */
+const table = document.querySelector("#submition");
+/** Create rows */
+let row1 = document.createElement('tr');
+let row2 = document.createElement('tr');
+let row3 = document.createElement('tr');
+let row4 = document.createElement('tr');
+
+
+

@@ -91,7 +91,6 @@ main{
 	padding: .25rem;
 	font-weight: 700;
 	font-size: 2rem;
-	font-family:"Great Vibes", serif;
 }
 
 iframe{
@@ -247,3 +246,36 @@ li a.open {
 	display: flex;
 }
 
+  /**
+  RANTING INPUT
+  */
+
+  #r {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+  }
+  
+  #rating {
+    color: blue;
+  }
+  
+  input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0);
+    width: 100%;
+  }
+  
+  .range-labels{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  
+  .ratevalue {
+    margin: 0;
+    flex: 1 1 auto;
+  }
+ 
+  
