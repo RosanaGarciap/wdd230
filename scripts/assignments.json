@@ -1,0 +1,7 @@
+{
+    "week01" : ["https://rosanagarciap.github.io/wdd230/week01/holygrail.html", "https://rosanagarciap.github.io/wdd230/", "./chamber/site-plan.html"],
+    "week02" : ["https://rosanagarciap.github.io/wdd230/week02/design.html","https://codepen.io/RosanaGarciap/pen/oNMZNEv"],
+    "week03" : ["week03/images/landscape.webp","./week03/lazyload.html","https://codepen.io/RosanaGarciap/pen/ExpbmRB?editors=1100","./week03/bom.html"],
+    "week04" : ["https://codepen.io/RosanaGarciap/pen/RwBMYXB", "./week04/images/css-combinators.png","./week04/tablebuild.html", "./week04/form-start/index.html" ],
+    "week05" : ["./week05/prophets.html","https://codepen.io/RosanaGarciap/pen/jOpdLxE", "./week05/new-ward-members.json", "./week05/weather.html"]
+}
