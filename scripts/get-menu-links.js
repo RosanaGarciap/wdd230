@@ -4,7 +4,7 @@ const list = document.querySelector('#menu');
 
 const displayWeeks = (data) => {
     let j = 0
-    data.forEach((week) => {
+    for (const week of data) {
         j = j+1;
       // Create elements to add to the list
       let item = document.createElement('li');
@@ -21,7 +21,7 @@ const displayWeeks = (data) => {
       
       list.appendChild(item);
 
-    }); // end of arrow function and forEach loop
+    }; // end of arrow function and forEach loop
   }
   
 
