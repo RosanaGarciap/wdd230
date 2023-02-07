@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="./scripts/get-menu-links.js"></script>
+    
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
@@ -74,6 +74,11 @@
             <section class="card" id="card3">
                 <h3>Information</h3>                
                 <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+                <p>The current temperature in Caracas, Venezuela is <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
             </section>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230342.03288956973!2d-62.76380153929089!3d8.330871051654867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dcbf02b84200b49%3A0x6e05317f7c974d14!2sCiudad%20Guayana%2C%20Bol%C3%ADvar!5e0!3m2!1ses!2sve!4v1675117944979!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             
@@ -140,6 +145,7 @@
             <p>&copy;<span id="year"></span> Rosana Garcia | Caracas Venezuela</p>  
             <p id="updating-time">Last Updated: <span id="date"></span></p>
         </footer>
+        <script src="./scripts/get-menu-links.js"></script>
         <script src="./scripts/getDates.js"></script>
     </body>
 </html>

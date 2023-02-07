@@ -1,7 +1,7 @@
 {
-    "week01" : ["https://rosanagarciap.github.io/wdd230/week01/holygrail.html", "https://rosanagarciap.github.io/wdd230/", "./chamber/site-plan.html"],
-    "week02" : ["https://rosanagarciap.github.io/wdd230/week02/design.html","https://codepen.io/RosanaGarciap/pen/oNMZNEv"],
-    "week03" : ["week03/images/landscape.webp","./week03/lazyload.html","https://codepen.io/RosanaGarciap/pen/ExpbmRB?editors=1100","./week03/bom.html"],
-    "week04" : ["https://codepen.io/RosanaGarciap/pen/RwBMYXB", "./week04/images/css-combinators.png","./week04/tablebuild.html", "./week04/form-start/index.html" ],
-    "week05" : ["./week05/prophets.html","https://codepen.io/RosanaGarciap/pen/jOpdLxE", "./week05/new-ward-members.json", "./week05/weather.html"]
+    "week01" : [["https://rosanagarciap.github.io/wdd230/week01/holygrail.html", "Holy Grail"], ["https://rosanagarciap.github.io/wdd230/", "Course Assignment Portal"], ["./chamber/site-plan.html", "Site Plan"]],
+    "week02" : [["https://rosanagarciap.github.io/wdd230/week02/design.html", "Web design Assignment"],["https://codepen.io/RosanaGarciap/pen/oNMZNEv", "Hamburguer Menu"]],
+    "week03" : [["week03/images/landscape.webp", "WebP"], ["./week03/lazyload.html", "Lazy Load"],["https://codepen.io/RosanaGarciap/pen/ExpbmRB?editors=1100", "Winter is Comming"],["./week03/bom.html", "Local Storage"]],
+    "week04" : [["https://codepen.io/RosanaGarciap/pen/RwBMYXB", "Pseudo-class Fun"], ["./week04/images/css-combinators.png", "CSS Combinators"],["./week04/tablebuild.html", "HTML Tables"], ["./week04/form-start/index.html", "Forms" ]],
+    "week05" : [["./week05/prophets.html", "Prophets"],["https://codepen.io/RosanaGarciap/pen/jOpdLxE", "Pseudo-elements"], ["./week05/new-ward-members.json", "JSON New Ward Members"], ["./week05/weather.html", "OpenWeatherMap API"]]
 }
