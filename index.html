@@ -87,8 +87,8 @@
             <form id="contact" action="">
                 <h4>Contact Us</h4>
                 <fieldset>
-                    <label class="top">First Name <input type="text" name="fn" required></label>
-                    <label class="top">Email <input type="email" name="email" id="email" required></label>
+                    <label class="top">First Name <input type="text" name="fn" id="fname" required></label>
+                    <label class="top">Email <input type="email" name="femail" id="femail" required></label>
                     <div class="range">
                         <label class="lrange"><input type="range" name="score" min="1" max="10" id="r" name="r" steps="1" value="1" required="required"></label>
                         
@@ -106,34 +106,25 @@
                           
                         </div>
                     </div>
-                    <label class="top">Username Identifier <input type="password" pattern="(?=.*\d)(?=.*[_%!+-])(?=.*[a-z])(?=.*[A-Z]).{5,12}" name="username" required id="username"></label>
-                    <label class="top">Repeat Username Identifier <input type="password" pattern="(?=.*\d)(?=.*[_%!+-])(?=.*[a-z])(?=.*[A-Z]).{5,12}" name="rusername" required id="rusername"></label>
+                    <label class="top">Username Identifier <input type="password" pattern="(?=.*\d)(?=.*[_%!+.-])(?=.*[a-z])(?=.*[A-Z]).{5,12}" name="username" required id="fusername"></label>
+                    <label class="top">Repeat Username Identifier <input type="password" pattern="(?=.*\d)(?=.*[_%!.+-])(?=.*[a-z])(?=.*[A-Z]).{5,12}" name="rusername" required id="frusername"></label>
                 </fieldset>
+                <label><button type="button" onclick="verifyInput()">Submit</button></label>
             </form>
             <table id="submition">
                 <thead>
-                    <tr>
-                        <th>Field</th>
-                        <th>Value</th>
+                    <tr id="theader">
                     </tr>
                     
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="fieldname" id="username"></td>
-                        <td></td>
+                    <tr id="name">
                     </tr>
-                    <tr>
-                        <td class="fieldname" id="email"></td>
-                        <td></td>
+                    <tr id="email">
                     </tr>
-                    <tr>
-                        <td class="fieldname" id="ranting"></td>
-                        <td></td>
+                    <tr id="ranting">
                     </tr>
-                    <tr>
-                        <td class="fieldname" id="username"></td>
-                        <td></td>
+                    <tr id="username">
                     </tr>
                 </tbody>
             </table>

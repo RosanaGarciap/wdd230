@@ -65,12 +65,76 @@ localStorage.setItem("visits-ls", numVisits);
 
 
 /**Event Listener generate Table */
+
 const table = document.querySelector("#submition");
-/** Create rows */
-let row1 = document.createElement('tr');
-let row2 = document.createElement('tr');
-let row3 = document.createElement('tr');
-let row4 = document.createElement('tr');
+
+function verifyInput() {
+    let v1 = document.getElementById("fusername");
+    let v2 = document.getElementById("frusername");
+    if (v1.value==v2.value) {
+        v2.style.backgroundColor = "white";
+        v2.style.borderColor = "green";
+        displayTable();
+    } else {
+        v2.style.backgroundColor = "#aa3333";
+        v2.style.borderColor = "#aa3333";
+        alert("Error: the username fields doesn't match");
+    }
+}
+function displayTable() {
+ /** Create rows */
+    const theader = document.querySelector("#theader");
+
+    let field = document.createElement('th');
+    let value = document.createElement('th');
+    field.textContent  = "FIELD";
+    value.textContent = "VALUE";
+
+    theader.appendChild(field);
+    theader.appendChild(value);
+
+    //CELLS
+    const username = document.querySelector("#username");
+    const mail = document.querySelector("#email");
+    const ranting = document.querySelector("#ranting");
+    const name = document.querySelector("#name");
+
+    // VALUES
+    let field1 = document.createElement('th');
+    let value1 = document.createElement('td');
+
+    field1.textContent = "NAME:";
+    value1.textContent = document.getElementById("fusername").value;
+    name.appendChild(field1);
+    name.appendChild(value1);
+    
+    let field2 = document.createElement('th');
+    let value2 = document.createElement('td');
+
+    field2.textContent = "EMAIL:";
+    value2.textContent = document.getElementById("femail").value;
+    mail.appendChild(field2);
+    mail.appendChild(value2);
+    
+
+    let field3 = document.createElement('th');
+    let value3 = document.createElement('td');
+
+    field3.textContent = "RATING:";
+    value3.textContent = document.getElementById("r").value;
+    ranting.appendChild(field3);
+    ranting.appendChild(value3);
+    
+
+    let field4 = document.createElement('th');
+    let value4 = document.createElement('td');
+    field4.textContent = "USERNAME";
+    value4.textContent = document.getElementById("fusername").value;
+    username.appendChild(field4);    
+    username.appendChild(value4);
+
+}
+
 
 
 

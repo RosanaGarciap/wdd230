@@ -276,11 +276,16 @@
   }
 
   table{
-    max-width: 150px;
+    width: 300px;
+    text-align: center;
   }
-
   tr, th, td{
     border-spacing: 0;
+    background-color: #272932e8;
+    color: white;
+    border-style: solid;
+    border-style: none;
+    text-align: center;
   }
   
   /**
