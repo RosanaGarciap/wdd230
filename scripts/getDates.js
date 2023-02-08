@@ -71,20 +71,19 @@ const table = document.querySelector("#submition");
 function verifyInput() {
     let v1 = document.getElementById("fusername");
     let v2 = document.getElementById("frusername");
-    if (v1.value==v2.value) {
+    if (v1.value==v2.value && v1.value.length > 0) {
         v2.style.backgroundColor = "white";
         v2.style.borderColor = "green";
         displayTable();
     } else {
         v2.style.backgroundColor = "#aa3333";
         v2.style.borderColor = "#aa3333";
-        alert("Error: the username fields doesn't match");
+        alert("Error: the username fields doesn't match or are empty");
     }
 }
 function displayTable() {
  /** Create rows */
     const theader = document.querySelector("#theader");
-
     let field = document.createElement('th');
     let value = document.createElement('th');
     field.textContent  = "FIELD";
@@ -104,7 +103,7 @@ function displayTable() {
     let value1 = document.createElement('td');
 
     field1.textContent = "NAME:";
-    value1.textContent = document.getElementById("fusername").value;
+    value1.textContent = document.getElementById("fname").value;
     name.appendChild(field1);
     name.appendChild(value1);
     

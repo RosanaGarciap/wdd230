@@ -109,7 +109,7 @@
                     <label class="top">Username Identifier <input type="password" pattern="(?=.*\d)(?=.*[_%!+.-])(?=.*[a-z])(?=.*[A-Z]).{5,12}" name="username" required id="fusername"></label>
                     <label class="top">Repeat Username Identifier <input type="password" pattern="(?=.*\d)(?=.*[_%!.+-])(?=.*[a-z])(?=.*[A-Z]).{5,12}" name="rusername" required id="frusername"></label>
                 </fieldset>
-                <label><button type="button" onclick="verifyInput()">Submit</button></label>
+                <button type="button" style="height: fit-content; margin: auto;" onclick="verifyInput()">Submit</button>
             </form>
             <table id="submition">
                 <thead>
@@ -129,9 +129,6 @@
                 </tbody>
             </table>
         </div>
-        <section hidden>
-
-        </section>
         <footer>
             <p>&copy;<span id="year"></span> Rosana Garcia | Caracas Venezuela</p>  
             <p id="updating-time">Last Updated: <span id="date"></span></p>

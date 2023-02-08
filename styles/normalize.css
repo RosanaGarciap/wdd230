@@ -278,8 +278,17 @@
   table{
     width: 300px;
     text-align: center;
+    border-collapse: collapse;
+    font-size: 12px;
+    height: 500px;
+    margin-bottom: 5%;
   }
-  tr, th, td{
+  th{
+    height: 80px;
+    color: black;
+    background-color: #83b1cf;
+  }
+  tr, td{
     border-spacing: 0;
     background-color: #272932e8;
     color: white;
