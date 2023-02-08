@@ -83,7 +83,12 @@ function verifyInput() {
 }
 function displayTable() {
  /** Create rows */
-    const theader = document.querySelector("#theader");
+    const div = document.querySelector("#tabla");
+    const tabla = document.createElement('table');
+    const thead = document.createElement('thead');
+    const tbody = document.createElement('tbody');
+    
+    const theader = document.createElement('tr');
     let field = document.createElement('th');
     let value = document.createElement('th');
     field.textContent  = "FIELD";
@@ -91,12 +96,14 @@ function displayTable() {
 
     theader.appendChild(field);
     theader.appendChild(value);
+    thead.appendChild(theader);
+    tabla.appendChild(thead);
 
     //CELLS
-    const username = document.querySelector("#username");
-    const mail = document.querySelector("#email");
-    const ranting = document.querySelector("#ranting");
-    const name = document.querySelector("#name");
+    const username = document.createElement('tr');
+    const mail = document.createElement('tr');
+    const ranting = document.createElement('tr');
+    const name = document.createElement('tr');
 
     // VALUES
     let field1 = document.createElement('th');
@@ -132,6 +139,14 @@ function displayTable() {
     username.appendChild(field4);    
     username.appendChild(value4);
 
+    tbody.appendChild(name);
+    tbody.appendChild(mail);
+    tbody.appendChild(ranting);
+    tbody.appendChild(username);
+
+    tabla.appendChild(tbody);
+
+    div.appendChild(tabla);
 }
 
 
