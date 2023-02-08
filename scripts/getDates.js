@@ -83,7 +83,9 @@ function verifyInput() {
 }
 function displayTable() {
  /** Create rows */
+    
     const div = document.querySelector("#tabla");
+    div.replaceChildren();
     const tabla = document.createElement('table');
     const thead = document.createElement('thead');
     const tbody = document.createElement('tbody');
