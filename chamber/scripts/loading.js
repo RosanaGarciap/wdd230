@@ -1,4 +1,4 @@
-const url = "./scripts/images.json";
+const url = "https://rosanagarciap.github.io/wdd230/chamber/scripts/images.json";
 const list = document.querySelector('#list-members');
 
 let i = 1;
