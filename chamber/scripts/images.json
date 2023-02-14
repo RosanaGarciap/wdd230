@@ -4,5 +4,11 @@
         "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/malls/plaza.webp",
         "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/malls/biblos.png",
         "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/malls/trebol.jpg"
-          ]
+          ],
+    "gallery":[
+      {
+        "title": "Christmast Park",
+        "url": "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/parque-la-navidad.webp"
+      }
+    ]
 }
