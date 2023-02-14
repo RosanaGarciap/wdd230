@@ -65,19 +65,22 @@
         max-width: 100%;
         display: grid;
         grid-template-columns: 300px auto;
-        height:600px;
-        overflow-y: scroll;
+    
     }
     .sidebar{
         background-color: var(--accent1-color);
         margin-bottom: 5%;
         margin-left: 5%;
+        height: 700px;
         padding: 30px;
         font-size: 14px;
     }
     .sidebar div{
         margin-top: 10%;
         justify-content: baseline;
+    }
+    hr{
+        margin-top: 20px;
     }
     .sidebar div h3{
         margin-top: 10%;
@@ -86,7 +89,18 @@
     .gallery{
         margin-bottom: 5%;
         margin-left: 5%;
+        text-align: center;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        height:500px;
+        overflow-y: scroll;
     }
+    .gallery img:hover{
+        width: 200px;
+        height: 200px;
+    } 
+    .gallery h2{
+        margin: auto;
+        text-align: center;
+    } 
 }
