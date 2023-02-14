@@ -12,7 +12,24 @@
       },
       {
         "title": "Llovizna Park",
-        "url": "https://github.com/RosanaGarciap/wdd230/blob/main/chamber/images/llovizna.jpg?raw=true"
+        "url": "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/llovizna.webp"
+      },
+      {
+        "title": "Orinoco and  Caroni's Confluence",
+        "url": "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/posada-grandes-rios.webp"
+      },
+      {
+        "title": "Wather Square",
+        "url": "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/de-guayana-para-el-mundo-4.2.webp"
+      },
+      {
+        "title": "Ciudad Guayana Symphony Orchestra",
+        "url": "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/ORQUESTA_5.webp"
+      }
+      ,
+      {
+        "title": "Cachamay Park",
+        "url": "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/ORQUESTA_5.webp"
       }
     ]
 }
