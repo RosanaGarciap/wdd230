@@ -40,6 +40,13 @@
     color: var(--accent2-color);
   }
 
+  h2 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-weight: 300;
+    text-align: left;
+  }
+
   header{
     width: 100%;
     padding-top: 4%;
@@ -47,9 +54,28 @@
     background-image: url("../images/hero-image.png");
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: right;
   }
 
+  /* width */
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--secondary-color); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:none; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 
   /* Sections
      ========================================================================== */
@@ -60,6 +86,7 @@
   
   body {
     margin: 0;
+    font-family: var(--paragraph-font);
   }
   
   /**
@@ -121,13 +148,10 @@
     text-decoration: underline; /* 2 */
     text-decoration: underline dotted; /* 2 */
   }
-  #header-content{
-    display: flex;
-    padding: 10px;
-  }
 
-  #header-content p{
-    padding-left:20px;
+  #header-content{
+    padding: 10px;
+    text-align: center;
   }
 
   #banner-box{
@@ -141,57 +165,62 @@
     padding: 1em;
     text-align: center;
     width: 20%;
+    line-height: 3em;
   }
       
-  .action input {
+  .action .contactbtn {
     line-height: 2em;
     text-align:center;
-    max-width:8em;
-    min-width:4em;
-    max-height:2.5em;
+    width:150px;
+    height:60px;
     background-color: var(--accent1-color);
     font-size: 1em;
     color:var(--accent2-color);
     font-weight:bold;
     border-radius:3px;
+    border-style: none;
   }
   
+/* Basic styling */ 
+* { 
+  box-sizing: border-box; 
+  padding: 0; margin: 0; 
+}  
+
+nav { 
+  background: var(--accent2-color); 
+  width: 100%;
+} 
 
 
-  nav {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: var(--nav-background-color);
-    line-height: 3em;
-    text-align: center;  
-    font-size: 1.2em;
-    font-size: 20px;
-    align-items: center;
-    justify-items: center;
-    width: 100%;
-    height: fit-content;
-  }
+footer p, footer li{
+  font-weight: bold;
+  line-height: 2rem;
+}
+.col2{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
 
-  nav > ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: right;
-  }
-  nav a {
-    padding:1em;
-    min-width: 70px;
-    text-decoration: none;
-  }
-  nav a:link, nav a:visited {
-    color: var(--nav-link-color);
-  }
-  nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
-    border-radius: 10px;
-    max-width: fit-content;
-  }
-  
+.event{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  line-height: 2em;
+
+}
+
+.event img{
+  width: 200px;
+  height: 180px;
+}
+.event h4{
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
   /**
    * Add the correct font weight in Chrome, Edge, and Safari.
    */
@@ -255,6 +284,18 @@
   
   /* Forms
      ========================================================================== */
+
+     input{
+      border: none;
+      border-bottom-style: solid;
+     }
+     input:focus, textarea:focus, select:focus{
+      outline: none;
+    }
+     form label{
+      padding-top: 5%;
+      line-height: 2em;
+     }
   
   /**
    * 1. Change the font styles in all browsers.
@@ -492,68 +533,18 @@
   }
 
   
+li, li a{
+  list-style:none;
+  margin: auto;
+}
+ul{
+  margin: 0 auto;
+  display:table;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
 /*------------ FORM----------------*/
 
-form {
-	max-width: 480px;
-	margin: 1rem;
-	border: 1px solid var(--accent2-color);
-	padding: 0.5rem;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	align-items: center;
-}
-
-label {
-	text-align: right;
-	font-weight: 700;
-}
-
-form fieldset{
-  margin: auto;
-  max-width: 480px;
-  padding: .5rem 2%;
-}
-
-form legend{
-  color: #445ba9;
-  margin: 0 1rem;
-  padding: 0 .5rem;
-}
-
-form label.top, form div{
-  display:block;
-  padding-top: 1rem;
-  color: var(--accent2-color);
-  font-size: .8rem;
-}
-
-form label.top input, form label.top select{
-  display: block;
-  font-size: 1rem;
-  padding:.75rem;
-  color:var(--accent2-color);
-  width:100%;
-  max-width: 20rem;
-  background-color: rgba(0,0,0,0.1);
-}
-
-form label.sbs{
-  display: block;
-  padding: .75rem 0;
-  color:#555;
-}
-
-form input.submitBtn{
-  border: none;
-  background-color: #9c2c13;
-  color: white;
-  border-radius: 1rem;
-  padding: .75rem 1.5rem;
-  margin: 0 0 2rem 2%;
-  width: 96%;
-  max-width: 20rem;
-}
 
 form label.top input:required{
   border-left: red solid 6px;
@@ -561,4 +552,137 @@ form label.top input:required{
 
 form label.top input:valid{
   border-left: green solid 6px;
+}
+
+footer a{
+  text-decoration: none;
+  color: #000;
+}
+
+footer a:hover{
+  color: rgb(177, 28, 177);
+}
+footer{
+  display: grid;
+  grid-template-areas: " a b c"
+  " d d d";
+  background-color: var(--nav-hover-background-color);
+  color: var(--accent2-color);
+  grid-template-columns: 400px auto auto;
+  grid-template-rows: auto auto;
+}
+
+footer div{
+  text-align: left; 
+  padding-left: 20px;
+  margin-top: 5%;
+}
+
+footer li {
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+svg{
+  fill: #FFB400;
+}
+
+footer svg{
+  fill: var(--nav-background-color);
+}
+footer ul{
+  margin: 0;
+}
+iframe{
+  width: 100%;
+}
+#fcol1{
+  grid-area: a;
+}
+
+#fcol2{
+  grid-area: b;
+}
+
+#fcol3{
+  grid-area: c;
+}
+
+#frow2{
+  grid-area: d;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  text-align: center;
+}
+
+footer p, footer li{
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: var(--accent2-color);
+}
+
+.topnav a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: var(--nav-hover-background-color);
+  color: black;
+  border-radius: 3px;
+}
+#membership h2{
+  text-align: left;
+  margin-bottom: 50px;
+}
+#card3{
+  text-align: center;
+}
+#list-members{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 10%;
+}
+
+#list-members img {
+  max-width: 180px;
+  max-height: 180px;
+  margin-top: 100px;
+}
+/*------------ Card----------------*/
+
+.card {
+  width: 100%;
+  min-width: fit-content;
+  background-color: white;       
+  line-height: 1.5em;
+  border: solid #000 1px;
+  border-width: 0px 0px 1px 0px ;
+}
+
+
+.events{
+  height: 210px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.events h4{
+  line-height: 2em;
+}
+.event img{
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }

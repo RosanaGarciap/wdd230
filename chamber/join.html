@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Guayana's Chamber of Shopping Centers home page">
+    <meta name="description" content="WDD 230 Rosana Garcia course assignment portal">
     <meta name="author" content="Rosana Garcia">
-    <meta property="og:title" content="Guayana's Chamber of Shopping Centers" />
+    <meta property="og:title" content="WDD 230 - Portal - Rosana Garcia" />
     <meta property="og:type" content="webside" />
     <meta property="og:url" content="./index.html" />
     <meta property="og:image" content="https://cdn.cronica.uno/wp-content/uploads/2021/07/18102943/ciudad-guayana-aniversario.jpg" />
@@ -19,86 +19,50 @@
 
 </head>
 <body>
-    <nav>        
-        <ul class="topnav" id="myTopnav">
-            <li class="logo">
-                    <img src="./images/logo-xs.png" alt="Branding of the Chamber of Shopping Centers">
-            </li>
-            <li href="javascript:void(0);" class="toggle icon" style="margin-left: 35px;">
-                <svg xmlns="http://www.w3.org/2000/svg" height="48" width="100"  onclick="myFunction()"><path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/>
-                </svg>
-            </li>
-            <li class="item"><a href="#">Discover</a></li>
-            <li class="item"><a href="#">JOIN</a></li>
-            <li class="item"><a href="#">Directory</a></li>
-            
-        </ul>
-    </nav>
-    <header>
-        <div id="banner-box">
-            <div class="action">
-                <h3>
-                  JOIN US!
-                </h3>
-                <input class="contactbtn" type="button" value="Contact Us">
-            </div>
+    <nav>
+        <div id="header-content">
+            <img src="./images/logo-xs.png" id="logo" alt="Branding of the Chamber of Shopping Centers">
+            <p style="color: white;">Guayana's Chamber of Shopping Centers</p>
         </div>
-    </header>
+        
+        <ul>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">JOIN</a></li>
+            <li><a href="#">Directory</a></li>
+            </ul>
+    </nav>
     <main>
-        <section>
-            <div class="card" id="card3">
-                    <h3>Local Information</h3>                
-                    <p>The current temperature in Caracas, Venezuela is <span id="current-temp"></span></p>
-                    <figure>
-                        <img id="weather-icon" src="" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-            </div>
-            <div class="col-2">
-                <h2>UPCOMING EVENTS</h2>
-                    <ul class="events">
-                        <li class="event card">
-                            <img src="./images/Yo-amo-Ciudad-Guayana.jpg" alt="Plaza monumental de CVG - Evento de Ciclismo">
-                            <div>
-                                <h4>1st Cycling Malls Trail</h4>
-                                <p>Join us in the first historic cycling route through all malls of Guayana</p>
-                            </div>
-                        </li>
-                        <li class="event card">
-                            <img src="./images/farming-festival.jpeg" alt="Littel fruit trees for sale">
-                            <div>
-                                <h4>Communal Forestal Service</h4>
-                                <p>Guayana's Chamber of Shopping Centers will donated 30 native trees to 
-                                    help to recovering the green spaces of Guayana.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="event card">
-                            <img src="./images/network-infrastructure.webp" alt="Publicity for new networking App for mall services">
-                            <div>
-                                <h4>Digital Exportation for In-Person Hearing Service</h4>
-                                <p> Members of the Chamber inverst in new Digital Apllication
-                                    that will interconect the users with all comercial establishment, 
-                                    including centers of public services, inside shopping centers. 
-                                </p>
-                            </div>
-                        </li>
-                </div>
-            </div>
-        </section>
-        <section id="membership">
-            <h2>MEMBERS</h2>
-            <div id="list-members">
-            
-            </div>
-        </section>
+        
+        <div>
+            <form action="thankyou.html">
+                <fieldset>
+                    <h3>Personal Information</h3>
+                    <label><b>First Name</b><br>        <input type="text" id="name"></label>
+                    <label><b>Last Name</b><br>         <input type="text" id="lname"></label>
+                    <label><b>Business Position</b><br> <input type="text" id="position" pattern="(?=.*[_-])(?=.*[a-z])(?=.*[A-Z]).{7,12}"></label>
+                    <label><b>email</b><br>             <input type="email" id="email"></label>
+                </fieldset>
+                <fieldset>
+                    <h3>Business Information</h3>
+                </fieldset>
+                <fieldset>
+                    <h3>Account Benefits</h3>
+                    <select name="membership" id="account">
+                        <option value="np">Non Profit</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="golden">Golden</option>
+                    </select>
+                    <ul class="membershiptype"></ul>
+                </fieldset>
+            </form>
+        </div>
     </main>
-
     <footer>
-        <div id="fcol1">
+        <div >
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252679.45057051812!2d-62.84925602179338!3d8.291211978859028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dcbf02b84200b49%3A0x6e05317f7c974d14!2sCiudad%20Guayana%2C%20Bol%C3%ADvar!5e0!3m2!1ses!2sve!4v1675998943943!5m2!1ses!2sve" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div id="fcol2">
+        <div>
             <h4>CONTACT US</h4>
             <ul>
                 <li><p>Ciudad Guayana, Alta Vista, Av Atlantico, Edf Los Proceres</p>
@@ -119,8 +83,8 @@
                 </li>
             </ul>
         </div>
-        <div id="fcol3">
-            <h4>FOLLOW US</h4>
+        <div>
+            <h4>Follow Us</h4>
             <ul>
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                     <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
@@ -146,12 +110,7 @@
                 </li>
             </ul>
         </div>
-        <div id="frow2">
-            <p>&copy;<span id="year"></span> Rosana Garcia | Ciudad Guayana, Venezuela</p>  
-            <p id="updating-time">Last Modified: <span id="date"></span></p>
-        </div>
     </footer>
 </body>
-<script src="./scripts/getDates.js"></script>
 <script src="./scripts/loading.js"></script>
 </html>

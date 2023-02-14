@@ -1,15 +1,8 @@
-
-
-.menu-button{
-    fill: white;
-    background-color: #000;
+@media all and (max-width: 600px) { 
+  h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--accent2-color);
 }
-
-main > a{
-    color: black;
-    text-decoration: none;
-}
-
 main{
     display: flex;
     flex-direction: column;
@@ -17,6 +10,7 @@ main{
     margin: auto;
     margin-top: 30px;
     width: 80%;
+    padding-bottom: 5%;
 }
 
 .hero {
@@ -53,159 +47,86 @@ main{
 	font-family:"Great Vibes", serif;
 }
 
-iframe{
-  width: 100%;
+#list-members{
+  display: flex;
+  flex-direction: row;
 }
+
+#list-members img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
 #title{
     grid-column: 1/3;
 }
-.card {
-    width: 100%;
-    min-width: fit-content;
-    box-shadow: 1px 1px 4px 1px #888;
-    border-radius: 3px;
-    background-color: white;       
-    line-height: 1.5em;
-  }
-#card3 p, #card2 p{
-  padding-left: 10px;
-}
-.card h3{
-    text-align: center;
-    background-color: #83b1cf;
-    padding: 1em;
-    margin-top: 0;
-}
-#card1{
-    grid-column: 1/2;
-    grid-row: 2/4;
-}
-#card2{
-    grid-row: 2/3;
-    grid-column: 2/3;
-}
-#card2 #card3{
-    grid-row: 2/3;
-    grid-column: 3/4;
-}
-.card-header{
-    width: 100%;
-    background-color: #83b1cf;
-    margin:0;
-    height: fit-content;    
-}
-#logo{
-  text-align: left;
-}
-li{
-    list-style:none;
-}
-/* Taken from W3School */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 17px;
-  }
-  
-  .switch input { 
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #282A3A;
-    -webkit-transition: .2s;
-    transition: .2s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 13px;
-    width: 13px;
-    left: 2px;
-    bottom: 2px;
-    background-color: white;
-    -webkit-transition: .2s;
-    transition: .2s;
-  }
-  
-  input:checked + .slider {
-    background-color: #ccc;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
-/* Rounded sliders */
-.slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
+
 
 /* Hamburger codepen CSS */
 
-.menu {
-	position: relative;
-	top: 0;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	background: #000;
-	z-index: 10;
-	overflow: hidden;
-	box-shadow: 2px 0 20px rgba(0, 0, 0, 0.26);
+.topnav a.icon {
+  float: left;
+  display: block;
 }
 
-.menu li a {
-	display: block;
-	text-decoration: none;
-	text-align: center;
-	width: 12rem;
-	padding: 1rem;
-	color: #fff;
-	position: relative;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	transition: background 0.5s ease-in-out;
+.topnav.responsive {position: relative; }
+.topnav.responsive .icon {
+  align-items: center;
+  justify-content: center;
+}
+.topnav .responsive li {
+  display: block;
+  text-align: center;
+}
+.topnav ul li:not(:first-child) {display: none;}
+
+footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+#list-members{
+  display: flex;
+  gap: 25px;
 }
 
-
-.menu li a:hover,
-.menu li:first-child a {
-	background: #267fdd;
-	color: #fff;
+#list-members img {
+  max-width: 100px;
+  max-height: 100px;
 }
 
-li a.menu-item {
-	display: none;
+#header-content{
+  padding: 10px;
+  text-align: center;
 }
 
-
-
-.active {
-	background: rgba(0, 0, 0, 0.1);
-	font-weight: 600;
+#banner-box{
+  width:100%;
+  display: flex;
+  text-align: center;
 }
 
-li a.open {
-	display: flex;
+.action {
+  background-color: rgba(240, 240, 240, 0.8);
+  margin: 1em 3em;
+  padding: 1em;
+  margin: auto;
+  width: 60%;
+  line-height: 3em;
 }
 
+.action .contactbtn {
+  line-height: 2em;
+  text-align:center;
+  width:300px;
+  height:60px;
+  background-color: var(--accent1-color);
+  font-size: 1em;
+  color:var(--accent2-color);
+  font-weight:bold;
+  border-radius:3px;
+  border-style: none;
+}
+
+}
