@@ -88,12 +88,13 @@ footer{
 }
 #list-members{
   display: flex;
+  flex-direction: column;
   gap: 25px;
 }
 
 #list-members img {
-  max-width: 100px;
-  max-height: 100px;
+  max-width: fit-content;
+  min-height: fit-content;
 }
 
 #header-content{
@@ -127,6 +128,29 @@ footer{
   font-weight:bold;
   border-radius:3px;
   border-style: none;
+}
+
+.events{
+  height: 210px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.events h3{
+  margin: auto;
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+.events p{
+  display: none;
+}
+.event img{
+  margin: auto;
+  width: 200px;
+  height: 150px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 }

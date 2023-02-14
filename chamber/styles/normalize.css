@@ -43,8 +43,8 @@
   h2 {
     margin-top: 10%;
     margin-bottom: 10%;
-    font-weight: 300;
     text-align: left;
+    font-size: 30px;
   }
 
   header{
@@ -63,12 +63,12 @@
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+section ::-webkit-scrollbar-track {
   background: var(--secondary-color); 
 }
  
 /* Handle */
-::-webkit-scrollbar-thumb {
+section ::-webkit-scrollbar-thumb {
   background:none; 
 }
 
@@ -214,9 +214,9 @@ footer p, footer li{
   width: 200px;
   height: 180px;
 }
-.event h4{
+.event h3{
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   padding-bottom: 30px;
   padding-top: 30px;
 }
@@ -301,7 +301,13 @@ footer p, footer li{
    * 1. Change the font styles in all browsers.
    * 2. Remove the margin in Firefox and Safari.
    */
-  
+  a{
+    text-decoration: none;
+    color: #000;
+  }
+  a:hover{
+    color: #1f769b;
+  }
   button,
   input,
   optgroup,
@@ -681,6 +687,7 @@ footer p, footer li{
 .events h4{
   line-height: 2em;
 }
+
 .event img{
   margin: auto;
   margin-bottom: 30px;
