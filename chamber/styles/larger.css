@@ -66,6 +66,7 @@
         display: grid;
         grid-template-columns: 300px auto;
         height:600px;
+        overflow-y: scroll;
     }
     .sidebar{
         background-color: var(--accent1-color);

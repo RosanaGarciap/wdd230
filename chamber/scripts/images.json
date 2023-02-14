@@ -25,11 +25,14 @@
       {
         "title": "Ciudad Guayana Symphony Orchestra",
         "url": "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/ORQUESTA_5.webp"
-      }
-      ,
+      },
       {
         "title": "Cachamay Park",
-        "url": "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/ORQUESTA_5.webp"
+        "url": "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/cachamay.webp"
+      },
+      {
+        "title": "Bonita Beach",
+        "url": "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/playa-bonita.webp"
       }
     ]
 }
