@@ -71,6 +71,15 @@
         background-color: var(--accent1-color);
         margin-bottom: 5%;
         margin-left: 5%;
+        padding: 30px;
+        font-size: 14px;
+    }
+    .sidebar div{
+        margin-top: 10%;
+        justify-content: baseline;
+    }
+    .sidebar div h3{
+        margin-top: 10%;
     }
 
     .gallery{
