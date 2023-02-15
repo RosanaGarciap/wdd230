@@ -1,20 +1,3 @@
-/**
- * Hamburger Menu
- */
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-      document.querySelectorAll('.item')
-          .forEach((function(x){ x.setAttribute("style","display:none");}));
-    } else {
-      x.className = "topnav";
-      document.querySelectorAll('.item')
-          .forEach((function(x){ x.setAttribute("style","display:block");}));
-    }
-  }
-
-
 const url = "https://rosanagarciap.github.io/wdd230/chamber/scripts/images.json";
 
 const cards = document.querySelector('#gallery');
@@ -90,4 +73,3 @@ numVisits++;
 localStorage.setItem("visits-ls", numVisits);
 
 // show todays date demonstration
-

@@ -1,7 +1,7 @@
 {
     "members" : [
         "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/malls/orinokia.webp",
-        "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/malls/plaza.webp",
+        "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/malls/biblos.webp",
         "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/malls/plaza.webp",
         "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/malls/trebol.webp"
           ],
@@ -33,6 +33,44 @@
       {
         "title": "Bonita Beach",
         "url": "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/playa-bonita.webp"
+      }
+    ],
+    "directory":[
+      {
+        "url": "https://www.instagram.com/cctrebol2/?hl=es",
+        "name": "CC Trebol II",
+        "address": "Av. Cdad. Bolívar, Ciudad Guayana 8050",
+        "phone": "+58 (424) 907.87.71",
+        "icon": "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/malls/trebol.webp",
+        "level": "Bronze",
+        "email":"mercadeo13@gmail.com"
+      },
+      {
+        "url": "https://orinokiamall.com/",
+        "name": "CC Orinokia Mall",
+        "address": "Orinokia Mall Avenida Las Américas, edificio A, Mezzanina 1, oficina Mezzanina 1. Urbanización Villa América. ",
+        "phone": "+58 (286) 600.36.82",
+        "icon": "https://lh6.googleusercontent.com/-YgAy3lMi9mw/AAAAAAAAAAI/AAAAAAAAAAA/MwACg-LyEEQ/s44-p-k-no-ns-nd/photo.jpg",
+        "level": "Golden",
+        "email": "mercadeo@gmail.com"
+      },
+      {
+        "url": "https://www.instagram.com/cctrebol2/?hl=es",
+        "name": "CC Biblos Center",
+        "address": "Ciudad Guayana 8050, Bolívar",
+        "phone": "-",
+        "icon": "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/malls/biblos.webp",
+        "level": "Non Profit",
+        "email":"mercadeo44@gmail.com"
+      },
+      {
+        "url": "https://www.instagram.com/plazaatlanticomall/?hl=es",
+        "name": "CC Plaza Atlantico",
+        "address": "Avenida Atlantico, Ciudad Guayana 8050, Bolívar",
+        "phone": "+58 (424) 932.71.49",
+        "icon": "https://raw.githubusercontent.com/RosanaGarciap/wdd230/main/chamber/images/malls/plaza.webp",
+        "level": "Silver",
+        "email":"mercadeo2@gmail.com"
       }
     ]
 }
