@@ -187,4 +187,10 @@ footer{
   margin-top:20%;
 }
 
+.directory{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 }

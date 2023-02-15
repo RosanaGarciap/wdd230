@@ -693,3 +693,9 @@ footer p, footer li{
   margin-bottom: 30px;
   margin-top: 30px;
 }
+
+.presentation-card{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  line-height: 1.5em;
+}
