@@ -46,6 +46,7 @@ const displayDirectory = (Directorys) => {
       card.appendChild(phone); //fill in the blank
       card.appendChild(email); //fill in the blank
       card.appendChild(address); //fill in the blank
+      card.appendChild(web); //fill in the blank
 
       presentation.appendChild(card);
     }); // end of arrow function and forEach loop
