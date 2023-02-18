@@ -50,10 +50,6 @@
         grid-template-columns: auto auto;
         grid-template-rows: auto 50px;
     }
-    
-    #sendbtn{
-        margin-left: 85%;
-    }
 
     .topnav li svg {
         display: none !important;

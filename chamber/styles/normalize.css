@@ -301,7 +301,10 @@ footer p, footer li{
       padding-top: 5%;
       line-height: 2em;
      }
-     
+     form button{
+      padding: 1em;
+      margin: 0;
+     }
      input, select{
       -webkit-border-radius: 20px;
       -moz-border-radius: 20px;

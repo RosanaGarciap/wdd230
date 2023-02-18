@@ -87,7 +87,8 @@ footer{
   text-align: left;
 }
 #sendbtn{
-  margin-left: auto;
+  margin-left: 25%;
+  margin-top: 10%;
 }
 
 #list-members{
