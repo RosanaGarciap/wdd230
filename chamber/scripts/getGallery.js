@@ -17,7 +17,7 @@ const displayGallery = (Gallerys) => {
       portrait.setAttribute('src', Gallery.url);
       portrait.alt = `Picture of ${GalleryFullName}`;// fill in the blank
       portrait.setAttribute('loading', 'lazy');
-      portrait.setAttribute('width', '150');
+      portrait.setAttribute('width', '200');
       portrait.setAttribute('height', '150');
   
       // Append the section(card) with the created elements

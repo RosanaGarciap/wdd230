@@ -86,6 +86,10 @@ footer{
   flex-direction: column;
   text-align: left;
 }
+#sendbtn{
+  margin-left: auto;
+}
+
 #list-members{
   display: flex;
   flex-direction: column;

@@ -10,7 +10,7 @@
     <meta property="og:type" content="webside" />
     <meta property="og:url" content="./index.html" />
     <meta property="og:image" content="https://cdn.cronica.uno/wp-content/uploads/2021/07/18102943/ciudad-guayana-aniversario.jpg" />
-    <title>Guayana's Chamber of Shopping Centers</title>
+    <title>Join Us Form</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -31,36 +31,49 @@
             <li class="item"><a href="index.html">Home</a></li>
             <li class="item"><a href="discover.html">Discover</a></li>
             <li class="item"><a href="#">JOIN</a></li>
-            <li class="item"><a href="#">Directory</a></li>
+            <li class="item"><a href="directory.html">Directory</a></li>
             
         </ul>
     </nav>
 
-    <main>
-        
+    <main  class="mainbody">
+        <div class="sidebar">
+            <h1 id="type">BENEFITS</h1>
+            <ul id="bn">
+
+            </ul>
+        </div>
         <div>
             <form action="thankyou.html">
                 <fieldset>
                     <h3>Personal Information</h3>
-                    <label><b>First Name</b><br>        <input type="text" id="name"></label>
-                    <label><b>Last Name</b><br>         <input type="text" id="lname"></label>
-                    <label><b>Business Position</b><br> <input type="text" id="position" pattern="(?=.*[_-])(?=.*[a-z])(?=.*[A-Z]).{7,12}"></label>
-                    <label><b>email</b><br>             <input type="email" id="email"></label>
+                    <label><b>First Name</b><br>        <input type="text" id="name" required></label>
+                    <label><b>Last Name</b><br>         <input type="text" id="lname" required></label>
+                    <label><b>Business Position</b><br> <input type="text" id="position" pattern="(?=.*[_- ])(?=.*[a-z])(?=.*[A-Z]).{7,12}"></label>
+                    <label><b>E-mail</b><br>             <input type="email" id="email" required></label>
+                    <label><b>Phone</b><br>             <input type="phone" id="phone" required></label>
                 </fieldset>
                 <fieldset>
                     <h3>Business Information</h3>
-                </fieldset>
-                <fieldset>
+                    <label><b>Business Name</b><br>         <input type="text" id="bname" required></label>
+                    <label>
+                        <textarea name="info" id="info" cols="30" rows="10" required></textarea>
+                    </label>
+                    
                     <h3>Account Benefits</h3>
-                    <select name="membership" id="account">
-                        <option value="np">Non Profit</option>
-                        <option value="bronze">Bronze</option>
-                        <option value="silver">Silver</option>
-                        <option value="golden">Golden</option>
-                    </select>
-                    <ul class="membershiptype"></ul>
+                    <label>
+                        <select name="membership" id="account">
+                            <option selected value="np">Non Profit</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="silver">Silver</option>
+                            <option value="golden">Golden</option>
+                        </select>
+                    </label>
                 </fieldset>
+                <label><input hidden type="datetime" id="dtime"></label>
+                <label><button id="sendbtn" type="submit" onclick="sendFunction()">Submit</button></label>
             </form>
+
         </div>
     </main>
 
@@ -122,5 +135,7 @@
         </div>
     </footer>
 </body>
-<script src="./scripts/loading.js"></script>
+<script src="./scripts/hamburguerMenu.js"></script>
+<script src="./scripts/benefits.js"></script>
+<script src="./scripts/getDates.js"></script>
 </html>
