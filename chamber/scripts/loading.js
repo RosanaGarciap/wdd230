@@ -61,5 +61,15 @@ async function getImageData() {
   
 getImageData();
 
-
-
+async function displayBanner() {
+  const banner = document.querySelector("#banner");
+  let today = new Date();
+  let weekDay = today.getDay(); 
+  if(weekDay==1 || weekDay==2 || weekDay==3 ){
+    banner.setAttribute("class", "show");
+  }
+  else{
+    banner.setAttribute("class", "hidde");
+  }
+}
+displayBanner();

@@ -55,6 +55,17 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .hidde{
+    display: none;
+  }
+  .show{
+    display: block;
+  }
+  #banner{
+    font-size: 16px;
+    padding: 0.5em;
+    background-color: #7FB800 !important;
+  }
 
   /* width */
 ::-webkit-scrollbar {
