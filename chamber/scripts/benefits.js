@@ -24,22 +24,22 @@ async function getBenefitsData() {
     const beneficio = document.getElementById("account").value;
     let level = document.createElement('h3'); // fill in the blank
     
-    if (beneficio = "np") {
+    if (beneficio == "np") {
         level.textContent = `Non-Profit`;
         type.appendChild(level);
         displayBenefits(datas.nonprofit);
     }
-    if (beneficio = "bronze") {
+    if (beneficio == "bronze") {
         level.textContent = `Bronze`;
         type.appendChild(level);
         displayBenefits(datas.bronze);
     }
-    if (beneficio = "silver") {
+    if (beneficio == "silver") {
         level.textContent = `Silver`;
         type.appendChild(level);
         displayBenefits(datas.silver);
     }
-    if (beneficio = "golden") {
+    if (beneficio == "golden") {
         level.textContent = `Golden`;
         type.appendChild(level);
         displayBenefits(datas.golden);
