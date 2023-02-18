@@ -193,7 +193,9 @@ nav {
   width: 100%;
 } 
 
-
+.icon > svg{
+  margin-left: 43%;
+}
 footer p, footer li{
   font-weight: bold;
   line-height: 2rem;
