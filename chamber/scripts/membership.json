@@ -1,17 +1,17 @@
 {
-    "Non-Profit": [
+    "np": [
         "Benefit 1", "Benefit 2", "Benefit 3"
     ],
 
-    "Bronze": [
+    "bronze": [
         "Benefit 1", "Benefit 2", "Benefit 3", "Benefit 4", "Benefit 5"
     ],
 
-    "Silver": [
+    "silver": [
         "Benefit 1", "Benefit 2", "Benefit 3", "Benefit 4", "Benefit 5", "Benefit 6", "Benefit 7"
     ],
 
-    "Golden": [
+    "golden": [
         "Benefit 1", "Benefit 2", "Benefit 3", "Benefit 4", "Benefit 5", "Benefit 6", "Benefit 7", "Benefit 8"
     ]
 }
