@@ -1,17 +1,25 @@
 {
     "np": [
-        "Benefit 1", "Benefit 2", "Benefit 3"
+        "Strength in numbers: The Chamber works every day to improve your business interests according to the necessities and strenghts of your geographic position.",
+        "Get free access to virtual conferences and resources about the latest intelligence on marketing issues"
     ],
 
     "bronze": [
-        "Benefit 1", "Benefit 2", "Benefit 3", "Benefit 4", "Benefit 5"
+        "Benefits of Non Profit membership", 
+        "Complimentary membership for your small business members",
+        "Access to new ideas and industry best practices",
+        "Free Access to exclusive policy events and conferences"
     ],
 
     "silver": [
-        "Benefit 1", "Benefit 2", "Benefit 3", "Benefit 4", "Benefit 5", "Benefit 6", "Benefit 7"
+        "Benefits of Bronze membership", 
+        "Free Publicitary Social network accounts to Share your Shopping Center online",
+        "Member-exclusive discounts"
     ],
 
     "golden": [
-        "Benefit 1", "Benefit 2", "Benefit 3", "Benefit 4", "Benefit 5", "Benefit 6", "Benefit 7", "Benefit 8"
+        "Benefit of Silver membership",
+        "Exclusive Federation Member Calls",
+        "Complimentary credit for your small business members: since small business are the heart of shopping centers, a credit will be provided to help new little business to start in your shopping centers, the payment plan details depends of the local's area"
     ]
 }

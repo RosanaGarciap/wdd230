@@ -62,8 +62,9 @@
                     
                     <h3>Account Benefits</h3>
                     <label>
-                        <select name="membership" id="account">
-                            <option selected value="np">Non Profit</option>
+                        <select name="membership" id="account" onload="getBenefitsData();" onchange="getBenefitsData();">
+                            <option>Select Membership Type</option>
+                            <option value="np">Non Profit</option>
                             <option value="bronze">Bronze</option>
                             <option value="silver">Silver</option>
                             <option value="golden">Golden</option>
@@ -71,7 +72,7 @@
                     </label>
                 </fieldset>
                 <label><input hidden type="datetime" id="dtime"></label>
-                <label><button id="sendbtn" type="submit" onclick="sendFunction()">Submit</button></label>
+                <label><button id="sendbtn" type="submit" >Submit</button></label>
             </form>
 
         </div>

@@ -704,6 +704,11 @@ footer p, footer li{
   border-width: 0px 0px 1px 0px ;
 }
 
+#bn li{
+  list-style: circle;
+  font-size: 25px;
+  line-height: 2em;
+}
 
 .events{
   height: 210px;
